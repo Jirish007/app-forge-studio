@@ -20,7 +20,7 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
 
   // Show alert and reset after successful "local" submission
-  alert("Thanks! We'll reach out soon to help build your app.");
+  alert("Thanks! We'll reach out soon.");
   this.reset();
 
   // Optionally here you could add AJAX to submit to submit.php
