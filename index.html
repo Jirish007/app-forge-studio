@@ -97,12 +97,13 @@
   <section id="contact" class="section contact">
     <div class="container">
       <h2>Start Your Journey</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required/>
-        <input type="email" placeholder="Your Email" required/>
-        <textarea rows="4" placeholder="Your project idea or question" required></textarea>
+      <form id="contactForm" method="POST" action="submit.php">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your project idea or question" required></textarea>
         <button type="submit" class="btn">Get in Touch</button>
       </form>
+      <div id="formMessage" style="margin-top: 1rem; color: red;"></div>
     </div>
   </section>
 
